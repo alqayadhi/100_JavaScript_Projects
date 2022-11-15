@@ -22,6 +22,7 @@ header{
     width: 25%;
     height: 95%;
     border: 1px solid #fff;
+    background-color: rgba(112, 62, 160, 0.644);
     padding: 20px 70px;
     position: relative;
     display: flex;
@@ -48,6 +49,7 @@ form{
     display: flex;
     width: 320px;
     margin-left: 10px;
+    position: relative;
 }
 input{
     width: 100%;
@@ -76,18 +78,47 @@ button{
     outline: none;
     cursor: pointer;
 }
-button:hover{
+button:active{
     transform: scale(0.96);
 }
 .results{
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
     padding-top: 20px;
     position: relative;
     width: 70%;
     height: 95%;
     color: white;
     background: rgb(39, 39, 39);
-    /*border: 1px solid #fff;*/
+    border: 1px solid #fff;
+}
+.results h1{
+    text-align: center;
+}
+
+ul.song{
+    list-style-type: none;
+}
+
+ul.song li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.results h2{
+    font-weight: 300;
+}
+
+.results p{
+    text-align: center;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+}
+
+.centered button{
+    transform: scale(1.3);
+    margin: 15px;
 }
