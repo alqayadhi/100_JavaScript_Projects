@@ -2,10 +2,30 @@
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 const result = document.getElementById('results')
+const more = document.getElementById('more');
 
 /// api URL ///
 const apiURL = 'https://api.lyrics.ovh';
 
+async function searchSongs(term){
+    const res = await fetch(`${apiURL}/suggest/${term}`);
+    const data = await res.json();
+
+    showData(data)
+}
+
+async function showData(data){
+    result.innerHTML=`
+    <ul class="songs">
+        ${data.data.map((song) => `<li>
+        <span><strong>${song.artist.name}</strong> - ${song.title}</span>
+        <button class="btn" data-artist="${song.artist.name}" data-songTitle
+        ="${song.title}">Get Lyrics
+        </li>`).json('')}
+    </ul>
+    `
+}
+/*
 form.addEventListener('submit', e=> {
     e.preventDefault();
     searchValue = search.value.trim();
@@ -98,7 +118,7 @@ result.addEventListener('click', e=>{
     }
     
 })
-
+*/
 /*************************************************
  * 
  * 
@@ -107,6 +127,7 @@ result.addEventListener('click', e=>{
  * 
  * ************************************************
  */
+/*
 const execute = (artist, songTitle)=>{
     var pageToken = '';
 
@@ -146,3 +167,4 @@ const execute = (artist, songTitle)=>{
     function(err) { console.error("Execute error", err); });
     
 }
+*/
