@@ -65,3 +65,21 @@ body{
 .form .input button:hover{
     background: green;
 }
+
+.content .data-section{
+    padding-top: 10px;
+}
+
+.suggested{
+    border: 1px solid #ddd;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.audio{
+    padding-top: 10px;
+}
