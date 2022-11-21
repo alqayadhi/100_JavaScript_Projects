@@ -61,4 +61,6 @@ search = function(){
     if (query === '') {
         return;
     }
+
+    found = -1; // initial
 }
