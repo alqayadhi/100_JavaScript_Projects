@@ -82,8 +82,24 @@ body{
     margin: -3px 0 -10px;
 }
 
-.wrapper ul{
+.wrapper.active .info-text{
     display: none;
+}
+
+.info-text span{
+    font-weight: 500;
+}
+
+.wrapper ul{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.wrapper.active ul {
+    height: 303px;
+    opacity: 1;
 }
 
 .wrapper ul li {
@@ -115,6 +131,15 @@ ul .word i {
     cursor: pointer;
     font-size: 15px;
     color: #999;
+}
+
+ul .content{
+    max-height: 215px;
+    overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar{
+    width: 0px;
 }
 
 .content li .details {
