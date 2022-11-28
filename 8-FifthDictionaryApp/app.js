@@ -38,7 +38,6 @@ let loadData = () =>{
             <p>${result[0].origin}</p>                
         </div>
         `;
-        console.log(result);
     }).catch(() =>{
         data.innerHTML = `<div class="error">Can't Find THE Meaning of <span>${text.value}</span>.Please Search Another Word.</div>
         `;
