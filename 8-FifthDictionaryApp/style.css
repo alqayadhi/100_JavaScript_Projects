@@ -129,3 +129,7 @@ body{
    background: linear-gradient(#008c72, #00bc62);
    border-radius: 60px;
 }
+
+.error span{
+    color: #008c72;
+}
