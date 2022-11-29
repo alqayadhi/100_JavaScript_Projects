@@ -14,20 +14,22 @@
 
         <div class="input">
             <i class="fas fa-search"></i>
-            <input type="text" id="text" placeholder="Type A Word...">
+            <input type="text" id="text" onkeyup="getans(event);" placeholder="Type A Word...">
         </div>
 
         <div class="results">
-            <span id="hidword" style="display: none;"></span>
+            <span id="hidWord" style="display: none;"></span>
             <button onclick="findWord();" style="display: none;"></button>
+            
             <!-- volume icon -->
-           
-            <div class="main-word">
+            <div class="main_word">
                 <span id="mainWord"></span>
                 <i class="fas fa-volume-up"></i>
             </div>
-            <p id="meaning">Meanings are show down here</p>
-            <p id="example">Examples are show down here</p>
+
+            <p id="meaning"></p>
+        
+            <p id="example"></p>
         </div>
     </div>
 
