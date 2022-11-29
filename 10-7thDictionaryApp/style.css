@@ -1,0 +1,25 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper{
+    text-align: center;
+    /* justify-content: center; */
+    width: 600px;
+    height: 500px;
+    border: 1px solid #fff;
+    padding: 12px;
+    margin: 12px;
+}
+
+.wrapper .title{
+    text-transform: uppercase;
+}
